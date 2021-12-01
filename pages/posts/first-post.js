@@ -6,7 +6,7 @@ import Navbar from '../../components/navbar'
 export default function FirstPost() {
   return (
     <Layout>
-      <Navbar></Navbar>
+    
       <Head>
         <title>First Post</title>
       </Head>

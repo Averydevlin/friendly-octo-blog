@@ -1,10 +1,12 @@
-import Link from 'next/link';
+import Head from 'next/head'
+import Image from 'next/image'
 import styles from './navbar.module.css'
+import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
 
 export default function Navbar() {
     return (
       <nav className={styles.nav}>
-        <input className={styles.input} placeholder="Search..." />
         <Link href="/">
           <a>Home</a>
         </Link>
@@ -14,6 +16,7 @@ export default function Navbar() {
         <Link href="/">
           <a>Contact</a>
         </Link>
+        <input className={styles.input} placeholder="Search..." />
       </nav>
     )
   }
